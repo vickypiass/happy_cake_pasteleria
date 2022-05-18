@@ -4,44 +4,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cake Pastelería</title>
+  <!--BOOTSTRAP-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!--CSS-->
   <link rel="stylesheet" href="css/style.css">
+  <title>Happy Cake Pastelería</title>
 </head>
 
 <body>
-  <header>
-    <div class="header">
-      <img src="./assets/logo.png" alt="logo-de-la-pagina" class="header_logo" />
-      <nav>
-        <ul>
-          <li class="nav_item">
-            <a href="./index.html">Inicio</a>
-          </li>
-          <li class="nav_item">
-            <a href="./pages/productos.html">Productos</a>
-          </li>
-          <li class="nav_item">
-            <a href="./pages/nosotros.html">Nosotros</a>
-          </li>
-          <li class="nav_item">
-            <a href="./pages/galeria.html">Galería</a>
-          </li>
-          <li class="nav_item">
-            <a href="./pages/contacto.html">Contacto</a>
-          </li>
-        </ul>
-      </nav>
+  <header class="container">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/logo.png" alt="logo-de-la-pagina" width="120">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link link-nav" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-nav" href="./pages/productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-nav" href="./pages/galeria.html">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-nav" href="./pages/nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-nav" href="./pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Carrousel-->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/budin.jpeg" class="d-block w-100" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/alfajores.jpeg" class="d-block w-100" alt="">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
     <div class="titulo_principal">
-      <img class="hero_image" src="assets/hero.jpeg" />
       <h1>Happy Cake</h1>
       <p class="parrafo_introductorio">In in officia eiusmod et quis magna deserunt reprehenderit ea velit exercitation
         culpa exercitation sint.
         Duis culpa voluptate eiusmod adipisicing est culpa Lorem veniam consectetur quis.
       </p>
     </div>
+    <!---->
   </header>
-  <main>
+
+  <main class="container">
     <section>
       <h2>Productos</h2>
       <div class="productos">
@@ -89,6 +121,7 @@
       </div>
     </section>
   </main>
+
   <footer>
     <div class="footer-container">
       <div class="redes-sociales">
@@ -106,6 +139,10 @@
       </div>
     </div>
   </footer>
+  <!--SCRIPT BOOTSTRAP-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -11,54 +11,68 @@
   </head>
 
   <body>
-    <header>
-      <div class="header">
-        <a href="/">
-          <img src="../assets/logo.png" alt="logo-de-la-pagina" class="header_logo" />
-        </a>
-        <nav>
-          <ul>
-            <li class="nav_item">
-              <a href="../index.html">Inicio</a>
-            </li>
-            <li class="nav_item" >
-              <a href="../pages/productos.html">Producto</a>
-            </li>
-            <li class="nav_item" >
-              <a href="../pages/nosotros.html">Nosotros</a>
-            </li>
-            <li class="nav_item" >
-              <a href="../pages/galeria.html">Galería</a>
-            </li>
-            <li class="nav_item" >
-              <a href="../pages/contacto.html">Contacto</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <h2>Productos</h2>
+    <header class="container">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <img src="../assets/logo.png" alt="logo-de-la-pagina" width="120">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-center">
+              <li class="nav-item">
+                <a class="nav-link link-nav up" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-nav up" href="productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-nav up" href="galeria.html">Galeria</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-nav up" href="nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-nav up" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <h2 class="d-flex justify-content-center">Productos</h2>
+      <p class="parrafo-producto d-flex justify-content-center">Con un perfil internacional, nuestras recetas y productos traen 
+        inspiraciones norteamericanas, italianas y francesas.<br>
+        Todo es hecho a mano, con inspiración y dedicación, como en casa.
+      </p>
     </header>
-    <section>
-      <table>
-        <thead>
-          <th>Nombre</th>
-          <th>Tipo</th>
-          <th>Descripción</th>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Tarta Frutal</td>
-            <td>Tarta</td>
-            <td>Base de galleta azucarada, crema pastelera y frutas de la estación.</td>
-          </tr>
-          <tr>
-            <td>Torta red velvet</td>
-            <td>Torta</td>
-            <td>Bizcocho red velvet, frosting de queso crema, relleno de frutos rojos y decorados con frutos del bosque.</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+
+    <main class="container">
+      <div class="col-lg-8 offset-lg-2">
+        <table class="table table-responsive table-bordered">
+          <thead>
+            <th>Nombre</th>
+            <th>Tipo</th>
+            <th>Descripción</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Tarta Frutal</td>
+              <td>Tarta</td>
+              <td>Base de galleta azucarada, crema pastelera y frutas de la estación.</td>
+            </tr>
+            <tr>
+              <td>Torta red velvet</td>
+              <td>Torta</td>
+              <td>Bizcocho red velvet, frosting de queso crema, relleno de frutos rojos y decorados con frutos del bosque.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
     <footer>
       <div class="footer-container">
         <div class="redes-sociales">

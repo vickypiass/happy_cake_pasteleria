@@ -9,28 +9,26 @@ html, body {
   height: 100%;
 }
 body {
-  display: grid;
-  grid-template-columns: repeat (3, 1fr);
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
     "nav nav nav"
     "main main main"
     "footer footer footer";
   justify-content: center;
+  align-items: center; */
   font-family: 'Nunito', sans-serif;
   background-color: rgb(255, 248, 245);
-  align-items: center;
 }
 
 header {
-  grid-area: nav;
+  /* grid-area: nav; */
   width: 100%;
-  /**display: flex;
-  flex-direction: column;**/
   align-items: center;
 }
 
 main {
-  grid-area: main;
+  /* grid-area: main; */
   width: 100%;
   max-width: 1200px;
 }
@@ -39,18 +37,9 @@ section {
   margin-bottom: 32px;
 }
 footer {
-  grid-area: footer;
+  /* grid-area: footer; */
   width: 100%;
 }
-
-/*.header {
-  width: 100%;
-  max-width: 1200px;
-  padding: 42px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-} */
 
 .hero_image {
   width: 100%;
@@ -62,7 +51,6 @@ footer {
 
 .titulo_principal {
   width: 100%;
-  max-width: 1200px;
 }
 
 nav {
@@ -94,6 +82,18 @@ a {
   color: black;
 }
 
+.up {
+  border-radius: 16px;
+  transition: background-color .4s, color .4s, padding .4s;
+  will-change: background-color, color, padding;
+}
+
+.up:hover {
+  background-color:#ffffff;
+  color: #4ec782e5;
+  padding: 24px 10px;
+}
+
 h1,
 h2,
 h3 {
@@ -105,6 +105,9 @@ h3 {
 p {
   font-size: 18px;
   margin-bottom: 42px;
+}
+.parrafo-producto{
+  margin-top: 42px;
 }
 
 th,
@@ -136,20 +139,17 @@ figcaption {
 }
 
 .presentacion {
-  width: 100%;
-  max-width: 1200px;
 }
 
 .galeria {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 1200px;
+  justify-content: center;
 }
 
 .carta {
   padding: 16px;
-  width: 208px;
 }
 
 .carta-iframe {
@@ -162,9 +162,20 @@ figcaption {
 }
 
 button {
-  margin-bottom: 32px;
-  padding: 8px;
-  font-size: 16px;
+  padding: 4px;
+  font-size: 18px;
+  color: #060606;
+  background-color: white;
+  border: 1px solid #151515;
+  text-align: center;
+}
+
+.click {
+  transition: 0.4s;
+}
+
+.click:hover{
+background-color: #71d19b;
 }
 
 .informacion-footer {
@@ -292,7 +303,6 @@ body {
   button {
     margin: 24px;
   }
-
   .footer-container {
     padding: 14px;
   }

@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2? family= Nunito & display=swap');
+@import 'variables';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-family: $font-principal;
+  background-color: $color-background;
+}
+
+header {
+  width: 100%;
+  align-items: center;
+}
+
+main {
+  width: 100%;
+  max-width: 1200px;
+}
+
+section {
+  margin-bottom: 32px;
+}
+footer {
+  width: 100%;
+}
+
+.hero_image {
+  width: 100%;
+}
+
+.header_logo {
+  width: 120px;
+}
+
+.titulo_principal {
+  width: 100%;
+}
+
+nav {
+  display: inline-block;
+
+  .nav_item {
+    display: inline;
+
+    .link-nav {
+      color: $color-letra-navegacion;
+    }
+
+    .up {
+      border-radius: 16px;
+      transition: background-color .4s, color .4s, padding .4s;
+      will-change: background-color, color, padding;
+
+      &:hover {
+        background-color:#ffffff;
+        color: $color-principal;
+        padding: 24px 10px;
+      }
+    }
+  }
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+li {
+  margin: 22px;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+  margin: 18px 0 18px 0;
+  color: $color-principal;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 42px;
+}
+
+.parrafo-producto{
+  margin-top: 42px;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+}
+
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+
+  figure {
+    margin: 24px;
+  }
+}
+
+.nosotros {
+  display: inline-flex;
+}
+
+.conocenos {
+  display: flex;
+  flex-direction: column;
+}
+
+figcaption {
+  font-size: 18px;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.carta {
+  padding: 16px;
+
+  &-iframe{
+    width: 448px;
+    padding: 16px;
+  }
+
+  &img{
+    width: 100%;
+  }
+}
+
+button {
+  padding: 4px;
+  font-size: 18px;
+  color: #060606;
+  background-color: white;
+  border: 1px solid #151515;
+  text-align: center;
+}
+
+.click {
+  transition: 0.4s;
+
+  &:hover{
+    background-color: $color-principal;
+    }
+}
+
+.informacion-footer {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+}
+
+.sn {
+  padding: 4px;
+}
+
+.direccion {
+  padding: 4px;
+}
+
+.nombre,
+.email,
+.comentario {
+  padding: 16px;
+}
+
+footer {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-top: 1px solid #ccc;
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    padding: 42px;
+  }
+}
+
+
+/*Tablet*/
+@media screen and (max-width: 768px) {
+  body {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "nav nav"
+      "main main"
+      "footer footer";
+  }
+
+  header, section {
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .productos {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-gap: 20px;
+  }
+
+  .productos figure {
+    margin: 0;
+  }
+
+  .productos figure img {
+    width: 100%;
+    height: auto;
+  }
+  .nosotros {
+    margin: 42px auto;
+  }
+}
+
+/*Mobil*/
+@media screen and (max-width: 480px) {
+  .header_logo {
+    width: 82px;
+  }
+
+body {
+  grid-template-rows: auto 1fr auto;
+  align-items: flex-start;
+}
+
+  header {
+    box-sizing: border-box;
+  }
+
+  ul {
+    flex-wrap: wrap;
+  }
+
+  li {
+    margin: 4px;
+    font-size: 16px;
+  }
+
+  .nav_item {
+    padding: 6px;
+  }
+
+  p {
+    font-size: 16px;
+    margin-bottom: 14px;
+  }
+
+  .productos {
+    grid-template-columns: repeat(2, 50%);
+    grid-gap: 0;
+  }
+
+  .productos figure {
+    padding: 8px;
+  }
+
+  figcaption {
+    font-size: 16px;
+  }
+
+  .nosotros {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  button {
+    margin: 24px;
+  }
+  .footer-container {
+    padding: 14px;
+  }
+
+  .sn {
+    display: block;
+    padding: 2px;
+  }
+}

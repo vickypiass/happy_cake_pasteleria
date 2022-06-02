@@ -1,6 +1,15 @@
 @import url("https://fonts.googleapis.com/css2? family= Nunito & display=swap");
 /*Colores*/
 /*Tipos de letras*/
+.btn-facebook {
+  color: #3b5998; }
+
+.btn-instagram {
+  color: #E1306C; }
+
+.btn-whatsapp {
+  color: #128c7e; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -114,18 +123,55 @@ figcaption {
   .cartaimg {
     width: 100%; }
 
-button {
-  padding: 4px;
-  font-size: 18px;
+.btn-conocenos {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  margin: 0;
+  text-transform: none;
+  -webkit-appearance: button;
+  display: inline-block;
+  padding: 0.75rem 0.375rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
   color: #060606;
-  background-color: white;
-  border: 1px solid #151515;
+  background-color: #ffff;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid #4ec782e5;
+  border-radius: 0.375rem;
+  font-size: 18px;
   text-align: center; }
 
 .click {
   transition: 0.4s; }
   .click:hover {
     background-color: #4ec782e5; }
+
+.btn-send {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  margin: 0;
+  text-transform: none;
+  -webkit-appearance: button;
+  display: inline-block;
+  padding: 0.75rem 0.375rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #0d6efd;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid #0d6efd;
+  border-radius: 0.375rem;
+  width: 200px; }
 
 .informacion-footer {
   display: flex;

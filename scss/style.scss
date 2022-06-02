@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2? family= Nunito & display=swap');
 @import 'variables';
+@import 'utils';
 
 * {
   margin: 0;
@@ -149,21 +150,22 @@ figcaption {
   }
 }
 
-button {
-  padding: 4px;
+.btn-conocenos {
+  @include button(#060606, #ffff, #4ec782e5);
   font-size: 18px;
-  color: #060606;
-  background-color: white;
-  border: 1px solid #151515;
   text-align: center;
 }
 
 .click {
   transition: 0.4s;
-
   &:hover{
     background-color: $color-principal;
     }
+}
+
+.btn-send {
+  @include button(#fff, #0d6efd, #0d6efd);
+  width: 200px;
 }
 
 .informacion-footer {
